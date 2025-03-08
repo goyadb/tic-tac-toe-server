@@ -31,7 +31,7 @@ app.use(session({
 }));
 
 async function connectDB() {
-  var databaseUrl = "mongodb://localhost:27017/tictactoe"
+  var databaseUrl = "mongodb+srv://goyadb:ji04sksb@cluster0.fj54l.mongodb.net/tic_tac_toe/?retryWrites=true&w=majority&appName=Cluster0"
 
   try {
     const database = await MongoClient.connect(databaseUrl, {
